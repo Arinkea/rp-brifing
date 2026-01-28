@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TvE SCENARIO RP • Форпост ВС РФ в Черноруси</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a1f0a 0%, #000000 100%);
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 5px solid #b71c1c;
+        }
+        .mission-card {
+            background: rgba(30, 50, 30, 0.9);
+            border: 3px solid #4a704a;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.2);
+        }
+        .map-container {
+            background: #0d1a0d;
+            border: 4px solid #2e7d32;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(74, 112, 74, 0.5);
+        }
+        .accent { color: #ff1744; font-weight: bold; }
+        .glow { text-shadow: 0 0 15px #ff1744, 0 0 25px #b71c1c; }
+        .map-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
 
+    <header class="header py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold glow">TvE SCENARIO RP</h1>
+            <p class="lead fs-4">Оборона форпоста ВС РФ в сердце Черноруси</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+
+                <div class="mission-card p-4 mb-5 text-center">
+                    <h2><i class="fas fa-shield-alt me-2 accent"></i>Боевая задача</h2>
+                    <p class="fs-5">
+                        Вы — боец мотострелковой бригады ВС РФ. Форпост в Черноруси бесит местное правительство и их союзников — ЧСО + США.
+                    </p>
+                    <p class="fs-5 fw-bold">
+                        Задача: <span class="accent">Удерживать ключевые точки</span>, оборонять форпост и <span class="accent">выбить врага</span> за пределы территории.
+                    </p>
+                    <i class="fas fa-crosshairs fa-4x accent mt-3"></i>
+                </div>
+
+                <div class="mission-card p-4">
+                    <h3 class="text-center mb-4"><i class="fas fa-map-marked-alt me-2 accent"></i>Операционная карта Черноруси (Chernarus+)</h3>
+                    
+                    <div class="map-container">
+                        <!-- Замени src на путь к твоей загруженной карте, например chernarus-map.jpg -->
+                        <img src="chernarus-map.jpg" alt="Карта Черноруси high resolution" class="map-img" loading="lazy">
+                    </div>
+                    
+                    <p class="text-center mt-3 fs-5">
+                        Форпост — в центре (возле <span class="accent">Электрозаводск / Черногорск</span>).  
+                        Ключевые точки: города на побережье, горные перевалы на севере, аэродром NW.
+                    </p>
+                    <p class="text-center small text-muted mt-2">
+                        Масштабируй колёсиком. Для RP: используй координаты (A–M по горизонтали, 1–15 по вертикали).
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 bg-black">
+        <p class="mb-0">ВС РФ • Чернорусь • 2026 • Слава России! 🇷🇺</p>
+        <p class="small">Хостинг: GitHub Pages</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
